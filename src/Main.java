@@ -19,11 +19,12 @@ public class Main {
     }
 
 
-
-
-
     public static boolean pariDispari(String str){
+
         boolean result = true;
+
+    //Se la lunghezza della stringa è dispari allora il risultato cambia da vero a falso
+
         if(str.length() % 2 != 0)
             result =false;
         System.out.println(result);
@@ -32,6 +33,9 @@ public class Main {
 
     public static boolean annoBisestile(int anno){
         boolean result = false;
+
+    //un anno è bisestile se divisibile per 4
+    //se l'anno termina con 00 (anno secolare) allora è bisestile SOLO se è divisibile per 400
 
         if (anno % 4 == 0){
             if(anno % 100 != 0 || anno % 400 == 0)
